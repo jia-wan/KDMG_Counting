@@ -6,7 +6,7 @@ args = None
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train ')
-    parser.add_argument('save_dir', 
+    parser.add_argument('--save_dir', 
                         help='directory to save models.')
     parser.add_argument('--data-dir', default='../../data/SHA2_Bayes',
                         help='training data directory')

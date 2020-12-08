@@ -55,7 +55,7 @@ class Crowd(data.Dataset):
                 self.im_list = sorted(glob(os.path.join(self.root_path, '*.jpg')))
         else:
             self.im_list = im_list
-        if method not in ['train', 'val', 'test']:
+        if method not in ['train', 'val']:
             raise Exception("not implement")
         self.method = method
 
